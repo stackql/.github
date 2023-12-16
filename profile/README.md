@@ -57,33 +57,33 @@
 
 <div align="center">
 
-[__Visit our main GitHub Repository »__][core]
+[__🌟 Visit our main GitHub Repository »__][core]
 
 </div>
 
 <div align="center">
 <p align="center">
 
-[__Read the docs »__][docs]  [__Visit our blog »__][blog]  
-[About Us](#about-stackql-studios) ·
-[Use Cases](#use-cases) ·
-[Key Repositories](#key-repositories) ·
-[Getting Involved](#getting-involved) ·
-[Services We Provide](#services-we-provide)
+[__📖 Read the docs »__][docs]  [__📝 Visit our blog »__][blog]  
+[👥 About Us](#about-stackql-studios) ·
+[🚀 Use Cases](#use-cases) ·
+[🗂️ Key Repositories](#key-repositories) ·
+[👐 Getting Involved](#getting-involved) ·
+[🛠️ Services We Provide](#services-we-provide)
 
 </p>
 </div>
 
-## About StackQL Studios
+## 🏢 About StackQL Studios
 StackQL Studios maintains [__`stackql`__][core] and related projects. We are software and data engineers who consider cloud and SaaS services, resources, and assets data sources.  The best way to interact with data is through *SQL*.  
 
 We are building a unified analytics and IaC framework using SQL for interacting with cloud and SaaS resources and APIs.  Our provider registry is based OpenAPI and GraphQL definitions for cloud and SaaS providers; see [__`stackql-provider-registry`__][registry].   
 
 Our config file-based provider plugin approach lowers the entry barrier for contributions compared to traditional code-intensive plugin frameworks.  Our SQL-based framework enables a broader audience of users without requiring them to learn yet another DSL.  
 
-> Simplifying multi-cloud cloud resource management, XOps, and observability using familiarity and power of SQL.
+> 🌐 Simplifying multi-cloud cloud resource management, XOps, and observability using familiarity and power of SQL.
 
-## Use Cases
+## 🎯 Use Cases
 - **Simplified Cloud Auditing and Compliance**: Audit resource deployments and configurations across multiple cloud and SaaS providers using a simple SQL-based framework
 - **Federated Entitlements and Identity Management**: Generate reports joining data from an IdP with entitlements in a SaaS, PaaS, or IaaS resource provider
 - **FinOps and Cost Optimization**: Analyze global resource deployment across multiple providers to identify opportunities for cost recovery or savings
@@ -92,7 +92,7 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 - **Automated Infrastructure as Code (IaC)**: Transactional multi-cloud infrastructure-as-code framework using a SQL ETL approach
 - **CI/CD Integration for Deployment Validation**: Integrate StackQL in your CI/CD workflows to validate resource state or enforce compliance
 
-## Key Repositories
+## 🗄️ Key Repositories
 | Repository | Languages | Description |
 |------------|-----------|-------------|
 | [__`stackql`__][core] | ![Go][golang] | StackQL core project that enables users to interact with cloud resources using SQL. |
@@ -111,17 +111,17 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 | [__`stackql-middleware`__][middleware] | ![TypeScript][typescript] ![Deno][deno] | Use StackQL with a public or private registry to submit SQL queries in API `POST` bodies to extract, project or mutate data (similar to GraphQL, but using SQL)  |
 | [__`stackql-playground`__][playground] | ![TypeScript][typescript] ![React][react] | Front end application connecting to a [__`stackql-middleware`__][middleware] server |
 
-## Getting Involved
+## 👐 Getting Involved
 We welcome contributions and community involvement in StackQL. Whether you're interested in contributing code (including SQL queries or new providers), reporting bugs, or requesting features, your input is valuable to us.
 
 - [**Contributing Guidelines**][contributing]
 - [**Discussions & Support**][discussions]
 
-StackQL is released under the [MIT License][license].
+📜 StackQL is released under the [MIT License][license].
 
-## Services We Provide
+## 🛠️ Services We Provide
 StackQL Studios provides custom audit services to create and automate client reports for Cloud Security Posture Management, Entitlements or User Access Management, FinOps/Cost Optimization, Network Analysis, Multi-Cloud Inventory Analysis, and more.  Contact us at [info@stackql.io](mailto:info@stackql.io)
 
 ---
 
-For more information, visit our [website][homepage], follow us on [X][twitter], or join our [Discord Server][discord].
+🌍 For more information, visit our [website][homepage], follow us on [X][twitter], or join our [Discord Server][discord].
