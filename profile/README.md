@@ -56,6 +56,12 @@
 </div>
 
 <div align="center">
+
+[__Visit our main GitHub Repository »__][core]
+
+</div>
+
+<div align="center">
 <p align="center">
 
 [__Read the docs »__][docs]  [__Visit our blog »__][blog]  
