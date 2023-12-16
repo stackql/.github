@@ -56,7 +56,7 @@
 </div>
 
 <div align="center">
-    <a href="[core]" style="color: red; text-decoration: none;"><strong>🔗 Visit our main GitHub Repository »</strong></a>
+    <strong><a href="https://github.com/stackql/stackql" style="color: red; text-decoration: none;">🔗 Visit our main GitHub Repository »</a></strong>
 </div>
 
 <div align="center">
