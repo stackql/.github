@@ -56,9 +56,7 @@
 </div>
 
 <div align="center">
-
-[__🌟 Visit our main GitHub Repository »__][core]
-
+    <a href="[core]" style="color: red; text-decoration: none;"><strong>🔗 Visit our main GitHub Repository »</strong></a>
 </div>
 
 <div align="center">
