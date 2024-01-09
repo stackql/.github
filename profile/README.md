@@ -25,6 +25,7 @@
 [middleware]: https://github.com/stackql/stackql-middleware
 [playground]: https://github.com/stackql/stackql-playground
 [server]: https://github.com/stackql/stackql-server
+[anysdk]: https://github.com/stackql/any-sdk
 
 <!-- badges -->
 [latestreleasebadge]: https://img.shields.io/github/v/release/stackql/stackql?sort=semver "Latest Release"
@@ -116,6 +117,7 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 | [__`openapisaurus`__][openapisaurus] | ![TypeScript][typescript] ![Deno][deno] ![OpenAPI][openapi] | StackQL provider development studio using Deno/TypeScript |
 | [__`stackql-middleware`__][middleware] | ![TypeScript][typescript] ![Deno][deno] | Use StackQL with a public or private registry to submit SQL queries in API `POST` bodies to extract, project or mutate data (similar to GraphQL, but using SQL)  |
 | [__`stackql-playground`__][playground] | ![TypeScript][typescript] ![React][react] | Front end application connecting to a [__`stackql-middleware`__][middleware] server |
+| [__`any-sdk`__][anysdk] | ![Go][golang] ![OpenAPI][openapi] | Golang library to support traversal algorithms on StackQL augmented openapi doc structure and SQL semantics. |
 
 ## 👐 Getting Involved
 We welcome contributions and community involvement in StackQL. Whether you're interested in contributing code (including SQL queries or new providers), reporting bugs, or requesting features, your input is valuable to us.
