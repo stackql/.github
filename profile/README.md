@@ -12,6 +12,7 @@
 [discussions]: https://github.com/orgs/stackql/discussions
 [jupyterdemo]: https://github.com/stackql/stackql-jupyter-demo
 [pystackql]: https://github.com/stackql/pystackql
+[stackqljs]: https://github.com/stackql/stackqljs
 [google2openapi]: https://github.com/stackql/google-discovery-to-openapi
 [openapisaurus]: https://github.com/stackql/openapisaurus
 [aws2openapi]: https://github.com/stackql/aws-cfn-schema-to-openapi
@@ -23,6 +24,7 @@
 [stackqlexec]: https://github.com/stackql/stackql-exec
 [middleware]: https://github.com/stackql/stackql-middleware
 [playground]: https://github.com/stackql/stackql-playground
+[server]: https://github.com/stackql/stackql-server
 
 <!-- badges -->
 [latestreleasebadge]: https://img.shields.io/github/v/release/stackql/stackql?sort=semver "Latest Release"
@@ -44,6 +46,8 @@
 [openapi]: https://img.shields.io/badge/openapi-%236C757D.svg?plastic&logo=openapiinitiative&logoColor=white
 [jupyter]: https://img.shields.io/badge/jupyter-F37626.svg?&plastic&logo=Jupyter&logoColor=white
 [python]: https://img.shields.io/badge/python-3776AB.svg?plastic&logo=Python&logoColor=white
+[npmjs]: https://img.shields.io/badge/npm-CB3837.svg?plastic&logo=nodedotjs&logoColor=white
+[postgresql]: https://img.shields.io/badge/postgresql-4169E1.svg?plastic&logo=postgresql&logoColor=white
 
 <!-- language: lang-none -->
 <div align="center">
@@ -99,6 +103,8 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 | [__`stackql-provider-registry`__][registry] | ![OpenAPI][openapi] ![Deno Deploy][denodeploy] | A registry for cloud and SaaS providers for StackQL, generated from extensions to the providers' OpenAPI3 specifications. |
 | [__`stackql-jupyter-demo`__][jupyterdemo] | ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Jupyter hub image with StackQL, including `%stackql` magic commands along with some sample notebooks to get started |
 | [__`stackql-codespaces-notebook`__][codespaces] | ![Python][python] ![Jupyter][jupyter] | Template repository to use StackQL in GitHub Codespaces, along with sample notebooks to get started  |
+| [__`stackql-server`__][server] | ![PostgreSQL][postgresql] | Self contained StackQL server with a Postgres backend for relational algebra and temporary storage, see [stackql/stackql-server](https://hub.docker.com/r/stackql/stackql-server) |
+| [__`stackqljs`__][stackqljs] | ![NPMJS][npmjs] ![JavaScript][javascript] ![TypeScript][typescript] ![Deno][deno] | StackQL client library for Deno and Node.js, see [npmjs](https://www.npmjs.com/package/@stackql/stackqljs) |
 | [__`pystackql`__][pystackql] | ![Python][python] | PyPi package to use StackQL within Python or IPython applications, see [readthedocs](https://pystackql.readthedocs.io/en/latest/) |
 | [__`stackql-actions-demo`__][actionsdemo] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | Demonstration of the StackQL GitHub Marketplace Actions to use StackQL in GitHub Actions workflows |
 | [__`setup-stackql`__][setupstackql] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to setup StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-studios-setup-stackql) |
