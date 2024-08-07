@@ -103,7 +103,7 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 |------------|-----------|-------------|
 | [__`stackql`__][core] | ![Go][golang] | StackQL core project that enables users to interact with cloud resources using SQL. |
 | [__`stackql-provider-registry`__][registry] | ![OpenAPI][openapi] ![Deno Deploy][denodeploy] | A registry for cloud and SaaS providers for StackQL, generated from extensions to the providers' OpenAPI3 specifications. |
-| [__`stackql_deploy`__][deploy] | ![Python][python] | Declarative, state-file-less, infrastructure-as-code using StackQL, see it on [pypi](https://pypi.org/project/stackql-deploy/). |
+| [__`stackql-deploy`__][deploy] | ![Python][python] | Declarative, state-file-less, infrastructure-as-code using StackQL, see it on [pypi](https://pypi.org/project/stackql-deploy/). |
 | [__`stackql-jupyter-demo`__][jupyterdemo] | ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Jupyter hub image with StackQL, including `%stackql` magic commands along with some sample notebooks to get started |
 | [__`stackql-codespaces-notebook`__][codespaces] | ![Python][python] ![Jupyter][jupyter] | Template repository to use StackQL in GitHub Codespaces, along with sample notebooks to get started  |
 | [__`stackql-server`__][server] | ![PostgreSQL][postgresql] | Self contained StackQL server with a Postgres backend for relational algebra and temporary storage, see [stackql/stackql-server](https://hub.docker.com/r/stackql/stackql-server) |
