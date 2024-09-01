@@ -32,7 +32,9 @@
 <!-- badges -->
 [latestreleasebadge]: https://img.shields.io/github/v/release/stackql/stackql?sort=semver "Latest Release"
 [downloadsbadge]: https://img.shields.io/github/downloads/stackql/stackql/total "Downloads"
+[dockerpullsbadge]: https://img.shields.io/docker/pulls/stackql/stackql "Docker Pulls"
 [licensebadge]: https://img.shields.io/github/license/stackql/stackql "License"
+[orgstars]: https://img.shields.io/github/stars/stackql?style=flat&label=org%20stars "GitHub Org Stars"
 
 <!-- social -->
 [twitter]: https://twitter.com/stackql
@@ -56,9 +58,11 @@
 <div align="center">
 
 [![logo]][homepage]  
-<!-- ![latestreleasebadge]
+![latestreleasebadge]
+![orgstars]
 ![downloadsbadge]
-![licensebadge] -->
+![dockerpullsbadge]
+![licensebadge]
 
 </div>
 
