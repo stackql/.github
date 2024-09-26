@@ -21,6 +21,7 @@
 [azure2openapi]: https://github.com/stackql/stackql-azure-openapi
 [codespaces]: https://github.com/stackql/stackql-codespaces-notebook
 [actionsdemo]: https://github.com/stackql/stackql-actions-demo
+[stackqldemo]: https://github.com/stackql/stackql-demo
 [setupstackql]: https://github.com/stackql/setup-stackql
 [stackqlassert]: https://github.com/stackql/stackql-assert
 [stackqlexec]: https://github.com/stackql/stackql-exec
@@ -53,6 +54,7 @@
 [python]: https://img.shields.io/badge/python-3776AB.svg?plastic&logo=Python&logoColor=white
 [npmjs]: https://img.shields.io/badge/npm-CB3837.svg?plastic&logo=nodedotjs&logoColor=white
 [postgresql]: https://img.shields.io/badge/postgresql-4169E1.svg?plastic&logo=postgresql&logoColor=white
+[sqlbadge]: https://img.shields.io/badge/SQL-database-brightgreen?logo=database&style=plastic
 
 <!-- language: lang-none -->
 <div align="center">
@@ -108,14 +110,15 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 |------------|-----------|-------------|
 | [__`stackql`__][core] | ![Go][golang] | StackQL core project that enables users to interact with cloud resources using SQL. |
 | [__`stackql-provider-registry`__][registry] | ![OpenAPI][openapi] ![Deno Deploy][denodeploy] | A registry for cloud and SaaS providers for StackQL, generated from extensions to the providers' OpenAPI3 specifications. |
-| [__`stackql-deploy`__][deploy] | ![Python][python] | Declarative, state-file-less, infrastructure-as-code using StackQL, see it on [pypi](https://pypi.org/project/stackql-deploy/). |
-| [__`stackql-deploy-action`__][deployaction] | ![GitHub Actions][githubactions] ![Python][python] | GitHub Action to deploy or test stacks using `stackql-deploy`. |
-| [__`stackql-jupyter-demo`__][jupyterdemo] | ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Jupyter hub image with StackQL, including `%stackql` magic commands along with some sample notebooks to get started |
-| [__`stackql-codespaces-notebook`__][codespaces] | ![Python][python] ![Jupyter][jupyter] | Template repository to use StackQL in GitHub Codespaces, along with sample notebooks to get started  |
+| [__`stackql-deploy`__][deploy] | ![Python][python] ![SQL][sqlbadge] | Declarative, state-file-less, infrastructure-as-code using StackQL, see it on [pypi](https://pypi.org/project/stackql-deploy/). |
+| [__`stackql-deploy-action`__][deployaction] | ![GitHub Actions][githubactions] ![Python][python] ![SQL][sqlbadge] | GitHub Action to deploy or test stacks using `stackql-deploy`. |
+| [__`stackql-demo`__][stackqldemo] | ![SQL][sqlbadge] ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Sample StackQL queries for CSPM, FinOps, inventory and more |
+| [__`stackql-jupyter-demo`__][jupyterdemo] | ![SQL][sqlbadge] ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Jupyter hub image with StackQL, including `%stackql` magic commands along with some sample notebooks to get started |
+| [__`stackql-actions-demo`__][actionsdemo] | ![SQL][sqlbadge] ![GitHub Actions][githubactions] ![JavaScript][javascript] | Demonstration of the StackQL GitHub Marketplace Actions to use StackQL in GitHub Actions workflows |
+| [__`stackql-codespaces-notebook`__][codespaces] | ![SQL][sqlbadge] ![Python][python] ![Jupyter][jupyter] | Template repository to use StackQL in GitHub Codespaces, along with sample notebooks to get started  |
 | [__`stackql-server`__][server] | ![PostgreSQL][postgresql] | Self contained StackQL server with a Postgres backend for relational algebra and temporary storage, see [stackql/stackql-server](https://hub.docker.com/r/stackql/stackql-server) |
 | [__`stackqljs`__][stackqljs] | ![NPMJS][npmjs] ![JavaScript][javascript] ![TypeScript][typescript] ![Deno][deno] | StackQL client library for Deno and Node.js, see [npmjs](https://www.npmjs.com/package/@stackql/stackqljs) |
 | [__`pystackql`__][pystackql] | ![Python][python] | PyPi package to use StackQL within Python or IPython applications, see [readthedocs](https://pystackql.readthedocs.io/en/latest/) |
-| [__`stackql-actions-demo`__][actionsdemo] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | Demonstration of the StackQL GitHub Marketplace Actions to use StackQL in GitHub Actions workflows |
 | [__`setup-stackql`__][setupstackql] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to setup StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-studios-setup-stackql) |
 | [__`stackql-assert`__][stackqlassert] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to run compliance or validation checks using StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-studios-stackql-assert) |
 | [__`stackql-exec`__][stackqlexec] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to execute StackQL queries in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-studios-stackql-exec) |
