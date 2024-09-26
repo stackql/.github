@@ -54,7 +54,7 @@
 [python]: https://img.shields.io/badge/python-3776AB.svg?plastic&logo=Python&logoColor=white
 [npmjs]: https://img.shields.io/badge/npm-CB3837.svg?plastic&logo=nodedotjs&logoColor=white
 [postgresql]: https://img.shields.io/badge/postgresql-4169E1.svg?plastic&logo=postgresql&logoColor=white
-[sqlbadge]: https://img.shields.io/badge/SQL-database-brightgreen?logo=database&style=plastic
+[sqlbadge]: https://img.shields.io/badge/SQL-database-green?style=flat-square&logo=database
 
 <!-- language: lang-none -->
 <div align="center">
