@@ -96,6 +96,25 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 
 > 🌐 Simplifying multi-cloud cloud resource management, XOps, and observability using familiarity and power of SQL.
 
+## Pillars of StackQL
+
+The three pillars of StackQL Studios are:
+
+- **Relevance**.  Make users more productive and empowered.
+- **Reliability**.  Do what it says on the outside of the box.
+- **Elegance**.  As simple as possible, but no simpler.  Ease of uptake and use.
+
+### Development Streams
+
+These are the key streams in ongoing development:
+
+1. RDBMS functionality, centred on [the `stackql` core](https://github.com/stackql/stackql). SQL logic and ACID semantics atop TCP/IP, local process calls.
+2. Generic foreign system CRUD via [`any-sdk`](https://github.com/stackql/any-sdk).
+3. IAC support through [`stackql-deploy`](https://github.com/stackql/stackql-deploy) and [the `v2` bleeding edge `rust` implementation](https://github.com/stackql/stackql-deploy-rs).  Because the core is lacking some ACID support and other useful constructs such as `insert... returning...`, there are retries and checks etc.  Eventually these will migrate to the core, coherently.
+4. The coverage and testing of [provider interface definition documents](https://github.com/stackql/stackql-provider-registry).  These leverage `any-sdk` and are a key link in the chain.  
+5. Full support for the [`postgres` wire protocol](https://github.com/stackql/psql-wire).  This will require coherent uplifts in the core.
+6. Analytics.  For now, this is managed in private repositories.
+
 ## 🎯 Use Cases
 - **Simplified Cloud Auditing and Compliance**: Audit resource deployments and configurations across multiple cloud and SaaS providers using a simple SQL-based framework
 - **Federated Entitlements and Identity Management**: Generate reports joining data from an IdP with entitlements in a SaaS, PaaS, or IaaS resource provider
@@ -137,6 +156,7 @@ We welcome contributions and community involvement in StackQL. Whether you're in
 - [**Discussions & Support**][discussions]
 
 📜 StackQL is released under the [MIT License][license].
+
 
 ## 🛠️ Services We Provide
 StackQL Studios provides custom audit services to create and automate client reports for Cloud Security Posture Management, Entitlements or User Access Management, FinOps/Cost Optimization, Network Analysis, Multi-Cloud Inventory Analysis, and more.  Contact us at [info@stackql.io](mailto:info@stackql.io)
