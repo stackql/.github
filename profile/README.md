@@ -96,6 +96,8 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 
 > 🌐 Simplifying multi-cloud cloud resource management, XOps, and observability using familiarity and power of SQL.
 
+> 🔍 **Looking for StackQL Provider Dev Projects** Head to the [__`stackql-registry`__](https://github.com/stackql-registry) GitHub org.
+
 ## Pillars of StackQL
 
 The three pillars of StackQL Studios are:
@@ -123,6 +125,9 @@ These are the key streams in ongoing development:
 - **Multi-cloud Resource Management**: One consistent SQL-based framework for XOps across all cloud, IdP and SaaS providers
 - **Automated Infrastructure as Code (IaC)**: Transactional multi-cloud infrastructure-as-code framework using a SQL ETL approach
 - **CI/CD Integration for Deployment Validation**: Integrate StackQL in your CI/CD workflows to validate resource state or enforce compliance
+- **✨ AI Control Plane Automation** - Use StackQL as an MCP server to give AI agents and LLMs direct, SQL-based access to cloud and SaaS APIs for querying, provisioning, and managing resources
+- **✨ Self-Describing Observability for AI Agents** - StackQL's provider registry and SQL interface are inherently discoverable, enabling AI agents to introspect available resources, operations, and schemas without external documentation
+- **✨ AI-Native Infrastructure Tooling** - Integrate StackQL into agentic workflows, copilots, and chat-driven operations as a unified tool for multi-cloud infrastructure reasoning and action
 
 ## 🗄️ Key Repositories
 | Repository | Languages | Description |
@@ -141,10 +146,6 @@ These are the key streams in ongoing development:
 | [__`setup-stackql`__][setupstackql] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to setup StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/setup-stackql) |
 | [__`stackql-assert`__][stackqlassert] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to run compliance or validation checks using StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-assert) |
 | [__`stackql-exec`__][stackqlexec] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to execute StackQL queries in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-exec) |
-| [__`google-discovery-to-openapi`__][google2openapi] | ![JavaScript][javascript] ![OpenAPI][openapi] | Extracts compliant OpenAPI3 specification from Google discovery docs |
-| [__`aws-cfn-schema-to-openapi`__][aws2openapi] | ![JavaScript][javascript] ![OpenAPI][openapi] | Creates compliant OpenAPI3 specifications with StackQL extensions from AWS CloudFormation schema documents |
-| [__`stackql-azure-openapi`__][azure2openapi] | ![JavaScript][javascript] ![OpenAPI][openapi] | Creates compliant OpenAPI3 specifications from Microsoft AutoRest |
-| [__`openapisaurus`__][openapisaurus] | ![TypeScript][typescript] ![Deno][deno] ![OpenAPI][openapi] | StackQL provider development studio using Deno/TypeScript |
 | [__`stackql-middleware`__][middleware] | ![TypeScript][typescript] ![Deno][deno] | Use StackQL with a public or private registry to submit SQL queries in API `POST` bodies to extract, project or mutate data (similar to GraphQL, but using SQL)  |
 | [__`stackql-playground`__][playground] | ![TypeScript][typescript] ![React][react] | Front end application connecting to a [__`stackql-middleware`__][middleware] server |
 | [__`any-sdk`__][anysdk] | ![Go][golang] ![OpenAPI][openapi] | Golang library to support traversal algorithms on StackQL augmented openapi doc structure and SQL semantics. |
