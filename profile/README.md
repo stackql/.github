@@ -6,29 +6,28 @@
 
 <!-- repos and links -->
 [core]: https://github.com/stackql/stackql
-[deploy]: https://github.com/stackql/stackql-deploy
-[deployaction]: https://github.com/stackql/stackql-deploy-action
-[license]: https://github.com/stackql/stackql/blob/main/LICENSE
 [registry]: https://github.com/stackql/stackql-provider-registry
-[contributing]: https://github.com/stackql/stackql/blob/main/CONTRIBUTING.md
-[discussions]: https://github.com/orgs/stackql/discussions
-[jupyterdemo]: https://github.com/stackql/stackql-jupyter-demo
-[pystackql]: https://github.com/stackql/pystackql
-[stackqljs]: https://github.com/stackql/stackqljs
-[google2openapi]: https://github.com/stackql/google-discovery-to-openapi
-[openapisaurus]: https://github.com/stackql/openapisaurus
-[aws2openapi]: https://github.com/stackql/aws-cfn-schema-to-openapi
-[azure2openapi]: https://github.com/stackql/stackql-azure-openapi
-[codespaces]: https://github.com/stackql/stackql-codespaces-notebook
-[actionsdemo]: https://github.com/stackql/stackql-actions-demo
-[stackqldemo]: https://github.com/stackql/stackql-demo
+[registry-org]: https://github.com/stackql-registry
+[deploy]: https://github.com/stackql/stackql-deploy-rs
 [setupstackql]: https://github.com/stackql/setup-stackql
 [stackqlassert]: https://github.com/stackql/stackql-assert
 [stackqlexec]: https://github.com/stackql/stackql-exec
-[middleware]: https://github.com/stackql/stackql-middleware
-[playground]: https://github.com/stackql/stackql-playground
-[server]: https://github.com/stackql/stackql-server
-[anysdk]: https://github.com/stackql/any-sdk
+[deployaction]: https://github.com/stackql/stackql-deploy-action
+[pystackql]: https://github.com/stackql/pystackql
+[omnisdk]: https://github.com/stackql-labs/omnisdk
+[workbench]: https://github.com/stackql/stackql-workbench
+[psql-wire]: https://github.com/stackql/psql-wire
+[deploy-crates]: https://crates.io/crates/stackql-deploy
+[crates-mcp]: https://crates.io/crates/stackql-mcp
+[npmjs-mcp]: https://www.npmjs.com/package/@stackql/mcp-server
+[nuget-mcp]: https://www.nuget.org/packages/StackQL.Mcp
+[nuget-mcp-agent-fwk]: https://www.nuget.org/packages/StackQL.Mcp.AgentFramework
+[pypi-mcp]: https://pypi.org/project/stackql-mcp-server/
+[oci-mcp]: https://hub.docker.com/r/stackql/stackql-mcp
+
+[license]: https://github.com/stackql/stackql/blob/main/LICENSE
+[contributing]: https://github.com/stackql/stackql/blob/main/CONTRIBUTING.md
+[discussions]: https://github.com/orgs/stackql/discussions
 
 <!-- badges -->
 [latestreleasebadge]: https://img.shields.io/github/v/release/stackql/stackql?sort=semver "Latest Release"
@@ -38,23 +37,22 @@
 [orgstars]: https://img.shields.io/github/stars/stackql?style=flat&label=org%20stars "GitHub Org Stars"
 
 <!-- social -->
-[twitter]: https://twitter.com/stackql
+[x]: https://x.com/stackql
 [discord]: https://discord.com/invite/xVXZ9d5NxN
 
+<!-- languages -->
 [golang]: https://img.shields.io/badge/golang-%2300ADD8.svg?plastic&logo=go&logoColor=white
+[rust]: https://shields.io/badge/-Rust-3776AB?style=flat&logo=rust
 [typescript]: https://img.shields.io/badge/typescript-%23007ACC.svg?plastic&logo=typescript&logoColor=white
 [javascript]: https://img.shields.io/badge/javascript-%23323330.svg?plastic&logo=javascript&logoColor=%23F7DF1E
-[denodeploy]: https://img.shields.io/badge/deno%20deploy-000000?v&logo=deno&logoColor=white
-[deno]: https://img.shields.io/badge/deno-000000?v&logo=deno&logoColor=white
-[docker]: https://img.shields.io/badge/docker-%230db7ed.svg?plastic&logo=docker&logoColor=white
-[react]: https://img.shields.io/badge/react-%2320232a.svg?plastic&logo=react&logoColor=%2361DAFB
 [githubactions]: https://img.shields.io/badge/github%20actions-%232671E5.svg?plastic&logo=githubactions&logoColor=white
 [openapi]: https://img.shields.io/badge/openapi-%236C757D.svg?plastic&logo=openapiinitiative&logoColor=white
-[jupyter]: https://img.shields.io/badge/jupyter-F37626.svg?&plastic&logo=Jupyter&logoColor=white
 [python]: https://img.shields.io/badge/python-3776AB.svg?plastic&logo=Python&logoColor=white
 [npmjs]: https://img.shields.io/badge/npm-CB3837.svg?plastic&logo=nodedotjs&logoColor=white
 [postgresql]: https://img.shields.io/badge/postgresql-4169E1.svg?plastic&logo=postgresql&logoColor=white
 [sqlbadge]: https://img.shields.io/badge/sql-0F4C81.svg?plastic&logo=sqlite&logoColor=white
+[dotnet]: https://img.shields.io/badge/.NET-5C2D91?style=badge&logo=.net&logoColor=white
+[docker]: https://img.shields.io/badge/docker-%230db7ed.svg?plastic&logo=docker&logoColor=white
 
 <!-- language: lang-none -->
 <div align="center">
@@ -96,7 +94,7 @@ Our config file-based provider plugin approach lowers the entry barrier for cont
 
 > 🌐 Simplifying multi-cloud cloud resource management, XOps, and observability using familiarity and power of SQL.
 
-> 🔍 **Looking for StackQL Provider Dev Projects** Head to the [__`stackql-registry`__](https://github.com/stackql-registry) GitHub org.
+> 🔍 **Looking for StackQL Provider Dev Projects** Head to the [__`stackql-registry`__][registry-org] GitHub org.
 
 ## Pillars of StackQL
 
@@ -110,12 +108,12 @@ The three pillars of StackQL Studios are:
 
 These are the key streams in ongoing development:
 
-1. RDBMS functionality, centred on [the `stackql` core](https://github.com/stackql/stackql). SQL logic and ACID semantics atop TCP/IP, local process calls.
-2. Generic foreign system CRUD via [`any-sdk`](https://github.com/stackql/any-sdk).
-3. IAC support through [`stackql-deploy`](https://github.com/stackql/stackql-deploy) and [the `v2` bleeding edge `rust` implementation](https://github.com/stackql/stackql-deploy-rs).  Because the core is lacking some ACID support and other useful constructs such as `insert... returning...`, there are retries and checks etc.  Eventually these will migrate to the core, coherently.
-4. The coverage and testing of [provider interface definition documents](https://github.com/stackql/stackql-provider-registry).  These leverage `any-sdk` and are a key link in the chain.  
-5. Full support for the [`postgres` wire protocol](https://github.com/stackql/psql-wire).  This will require coherent uplifts in the core.
-6. Analytics.  For now, this is managed in private repositories.
+1. RDBMS functionality, centred on [the `stackql` core][core]. SQL logic and ACID semantics atop TCP/IP, local process calls.
+2. Generic wire-protocol agnostic foreign system interfaces via [__`omnisdk`__][omnisdk].
+3. Declarative IaC support through [`stackql-deploy`][deploy] and [__`omnisdk`__][omnisdk].
+4. The coverage and testing of [provider interface definition documents][registry] leveraging [`omnisdk`][omnisdk].  
+5. Full support for the [`postgres` wire protocol][psql-wire].  
+6. Analytics. Including CSPM, audit, entitlements/UAM, inventory, finops and more.
 
 ## 🎯 Use Cases
 - **Simplified Cloud Auditing and Compliance**: Audit resource deployments and configurations across multiple cloud and SaaS providers using a simple SQL-based framework
@@ -133,22 +131,21 @@ These are the key streams in ongoing development:
 | Repository | Languages | Description |
 |------------|-----------|-------------|
 | [__`stackql`__][core] | ![Go][golang] | StackQL core project that enables users to interact with cloud resources using SQL. |
-| [__`stackql-provider-registry`__][registry] | ![OpenAPI][openapi] ![Deno Deploy][denodeploy] | A registry for cloud and SaaS providers for StackQL, generated from extensions to the providers' OpenAPI3 specifications. |
-| [__`stackql-deploy`__][deploy] | ![Python][python] ![SQL][sqlbadge] | Declarative, state-file-less, infrastructure-as-code using StackQL, see it on [pypi](https://pypi.org/project/stackql-deploy/). |
-| [__`stackql-deploy-action`__][deployaction] | ![GitHub Actions][githubactions] ![Python][python] ![SQL][sqlbadge] | GitHub Action to deploy or test stacks using `stackql-deploy`. |
-| [__`stackql-demo`__][stackqldemo] | ![SQL][sqlbadge] ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Sample StackQL queries for CSPM, FinOps, inventory and more |
-| [__`stackql-jupyter-demo`__][jupyterdemo] | ![SQL][sqlbadge] ![Python][python] ![Jupyter][jupyter] ![Docker][docker] | Jupyter hub image with StackQL, including `%stackql` magic commands along with some sample notebooks to get started |
-| [__`stackql-actions-demo`__][actionsdemo] | ![SQL][sqlbadge] ![GitHub Actions][githubactions] ![JavaScript][javascript] | Demonstration of the StackQL GitHub Marketplace Actions to use StackQL in GitHub Actions workflows |
-| [__`stackql-codespaces-notebook`__][codespaces] | ![SQL][sqlbadge] ![Python][python] ![Jupyter][jupyter] | Template repository to use StackQL in GitHub Codespaces, along with sample notebooks to get started  |
-| [__`stackql-server`__][server] | ![PostgreSQL][postgresql] | Self contained StackQL server with a Postgres backend for relational algebra and temporary storage, see [stackql/stackql-server](https://hub.docker.com/r/stackql/stackql-server) |
-| [__`stackqljs`__][stackqljs] | ![NPMJS][npmjs] ![JavaScript][javascript] ![TypeScript][typescript] ![Deno][deno] | StackQL client library for Deno and Node.js, see [npmjs](https://www.npmjs.com/package/@stackql/stackqljs) |
-| [__`pystackql`__][pystackql] | ![Python][python] | PyPi package to use StackQL within Python or IPython applications, see [readthedocs](https://pystackql.readthedocs.io/en/latest/) |
+| [__`stackql-provider-registry`__][registry] | ![OpenAPI][openapi] | A registry for cloud and SaaS providers for StackQL, generated from extensions to the providers' OpenAPI3 specifications. |
+| [__`@stackql/mcp-server (npmjs)`__][npmjs-mcp] | ![npmjs][npmjs] ![TypeScript][typescript] ![JavaScript][javascript] | StackQL MCP Server distributed via NPM for JavaScript and TypeScript agent applications. |
+| [__`stackql-mcp (crates.io)`__][crates-mcp] | ![Rust][rust] | StackQL MCP Server distributed via crates.io for Rust agent applications. |
+| [__`stackql-mcp-server (pypi)`__][pypi-mcp] | ![Python][python] | StackQL MCP Server distributed via PyPi for Python agent applications. |
+| [__`stackql/stackql-mcp (oci/dockerhub)`__][oci-mcp] | ![Dockerhub][docker] | StackQL MCP Server distributed via OCI for containerized agent applications. |
+| [__`StackQL.Mcp (NuGet)`__][nuget-mcp]<br/>[__`StackQL.Mcp.AgentFramework (NuGet)`__][nuget-mcp-agent-fwk] | ![.NET][dotnet] | StackQL MCP Server distributed via NuGet for .NET agent applications. |
+| [__`stackql-workbench`__][workbench] | ![Rust][rust] ![SQL][sqlbadge] | Native Windows and MacOS user interface for running StackQL queries with an AI chat interface. |
+| [__`stackql-deploy`__][deploy] | ![Rust][rust] ![SQL][sqlbadge] | Declarative, state-file-less, infrastructure-as-code using StackQL, see it on [crates.io][deploy-crates]. |
 | [__`setup-stackql`__][setupstackql] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to setup StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/setup-stackql) |
 | [__`stackql-assert`__][stackqlassert] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to run compliance or validation checks using StackQL in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-assert) |
 | [__`stackql-exec`__][stackqlexec] | ![GitHub Actions][githubactions] ![JavaScript][javascript] | GitHub Action to execute StackQL queries in an Actions workflow; see overview in the GitHub Actions [marketplace](https://github.com/marketplace/actions/stackql-exec) |
-| [__`stackql-middleware`__][middleware] | ![TypeScript][typescript] ![Deno][deno] | Use StackQL with a public or private registry to submit SQL queries in API `POST` bodies to extract, project or mutate data (similar to GraphQL, but using SQL)  |
-| [__`stackql-playground`__][playground] | ![TypeScript][typescript] ![React][react] | Front end application connecting to a [__`stackql-middleware`__][middleware] server |
-| [__`any-sdk`__][anysdk] | ![Go][golang] ![OpenAPI][openapi] | Golang library to support traversal algorithms on StackQL augmented openapi doc structure and SQL semantics. |
+| [__`stackql-deploy-action`__][deployaction] | ![GitHub Actions][githubactions] ![SQL][sqlbadge] | GitHub Action to deploy or test stacks using `stackql-deploy`. |
+| [__`pystackql`__][pystackql] | ![Python][python] | PyPi package to use StackQL within Python or IPython applications, see [readthedocs](https://pystackql.readthedocs.io/en/latest/) |
+| [__`omnisdk`__][omnisdk] | ![Go][golang] ![OpenAPI][openapi] | Golang library to support traversal algorithms on StackQL augmented openapi doc structure and SQL semantics. |
+
 
 ## 👐 Getting Involved
 We welcome contributions and community involvement in StackQL. Whether you're interested in contributing code (including SQL queries or new providers), reporting bugs, or requesting features, your input is valuable to us.
@@ -164,4 +161,4 @@ StackQL Studios provides custom audit services to create and automate client rep
 
 ---
 
-🌍 For more information, visit our [website][homepage], follow us on [X][twitter], or join our [Discord Server][discord].
+🌍 For more information, visit our [website][homepage], follow us on [X][x], or join our [Discord Server][discord].
